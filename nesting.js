@@ -51,6 +51,15 @@ var employees = [
 */
 
 //Code Here
+let employeeUpdater = () => {
+  for (let i = employees.length-1; i >= 0; i--){
+    if (employees[i].firstName === "Theo"){
+      employees.splice(i, 1)} else if 
+        (employees[i].firstName === "Lorie"){
+          employees[i].department = "HR"
+        } i--
+      } return employees;
+    }
 
 
 
@@ -69,7 +78,9 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
-
+let removeDuplicates = () => {
+  for (let i = workplaceAccidents.length-1; i >= 0; i--)
+}
 
 
 ////////// PROBLEM 3 //////////
