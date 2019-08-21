@@ -43,7 +43,7 @@ function showValues( obj ) {
   //Code Here 
   let concatenatedString = ``;
   for (var key in obj) {
-    concatenatedString += `${concatenatedString} + ${obj[key]} ` 
+    concatenatedString += obj[key] 
   } return concatenatedString;
 }
 
@@ -93,6 +93,14 @@ let double = obj => {
 */
 
 //Code Here
+let secrets = (obj) => {
+  let empty = '';
+  for (let key in obj) {
+    if (key.startsWith('sh')){
+      empty = empty + obj[key]
+    }
+  } return empty
+}
 
 
 

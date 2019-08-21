@@ -21,7 +21,12 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 */
 
 //Code Here
-let evenNumbers // = mixedNumbers.filter(/* Provide Your Callback Here */)
+let evenNumbers/*= mixedNumbers.filter(Provide Callback Here)*/ = mixedNumbers.filter (function(elementNameHere, indexValueHere){
+    if (mixedNumbers[indexValueHere] % 2 === 0){
+      return true
+    } 
+  }
+)
 
 
 
@@ -44,7 +49,9 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
 */
 
 //Code Here
-let postTaxPrices // = prices.map(/* Provide Your Callback Here );
+let postTaxPrices/*= prices.map(Provide Your Callback Here );*/ = prices.map(function(el, ind){
+  prices[ind]*1.07
+})
 
 
 
